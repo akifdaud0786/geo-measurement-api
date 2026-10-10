@@ -1,0 +1,10 @@
+[project]
+name = "geo-measurement-api"
+version = "1.0.0"
+description = "Upload Shapefile/KML files and get accurate area and length measurements per feature."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:starlette.*"]
